@@ -2,7 +2,6 @@ header {
     display: flex;
     justify-content: space-around;
     background-color: #000000;
-
 }
 
 header .fotoPerfil {
@@ -17,11 +16,11 @@ header .Logo {
 }
 
 .menu {
-    background-color: #fa9567;
+    /* background-color: #fa9567; */
     font-weight: 1000;
 }
 
-.lista {
+.menu ul {
   list-style-type: none;
   padding: 0;
   display: flex;
