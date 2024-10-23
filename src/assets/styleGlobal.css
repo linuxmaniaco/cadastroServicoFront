@@ -23,9 +23,13 @@ header fieldset {
 }
 
 .menu {
-  background-color: #eeeeee;
+  background-color: #4f4f4f;
   font-weight: 1000;
   border-radius: 5px;
+}
+
+.menu ul li a {
+  color: #ffffff;
 }
 
 .menu ul {
