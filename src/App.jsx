@@ -11,67 +11,43 @@ function App() {
 
   return (
   
-    <Layout>
-      <div className='main'>
-        {/* <div className='titlePage'>Sistema</div> */}
-        <div className='Description'>Tabela de serviços</div>
-        
-        <div className="servicos" role="region" tabIndex="0">
-          <table>
-              <thead>
-                  <tr>
-                      <th>
-                          <div>
-                              <div>Serviços</div>
-                          </div>
-                      </th>
-                      <th>
-                          <div>
-                              <div>Pedidos</div>
-                          </div>
-                      </th>
-                      <th>
-                          <div>
-                              <div>Relatório</div>
-                          </div>
-                      </th>
-                      <th>
-                          <div>
-                              <div>Admin</div>
-                          </div>
-                      </th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-              </tbody>
-          </table>
+      <>
+        <header>
+            <fieldset>
+                <legend>Funcionário</legend>
+                    <div className='foto'><img className='fotoPerfil' src={fotoPerfil}></img> </div>
+            </fieldset>
+            <div className='Logo'> <img src={logoImage}></img> Tabela de cadastro de serviços</div>
+
+            <fieldset>
+                <legend>Resumo diário</legend>
+                <div className='LogoText'>  </div>
+            </fieldset>
+        </header>
+
+        <div className='menu'>
+          <ul>
+              <li><a href='#'>SERVIÇOS</a></li>
+              <li><a href='#'>PEDIDOS</a></li>
+              <li><a href='#'>RELATÓRIOS</a></li>
+              <li><a href='#'>ADMIN</a></li>
+          </ul>
         </div>
-      </div>
-    </Layout>
+        {/* <Container> */}
+
+        
+
+        {/* </Container> */}
+            {/* <Container>{children}</Container> */}
+    
+        <Layout></Layout>
+        <footer>
+            <div className='copy'>Desenvolvido por Eduardo</div>
+            <div className='contact'>Cel/Zap: (21) 99451-9731</div>
+        </footer>
+      </>
+      
+    
   
   );
 }
