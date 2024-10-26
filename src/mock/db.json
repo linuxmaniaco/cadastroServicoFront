@@ -1,13 +1,101 @@
 {
-    "posts": [
-      { "id": "1", "title": "a title", "views": 500 },
-      { "id": "2", "title": "another title", "views": 200 }
-    ],
-    "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1", "postId": "1" }
-    ],
-    "profile": {
-      "name": "typicode"
+  "servico": [
+    {
+      "id": "1",
+      "servico": "xerox",
+      "descricao": "copia",
+      "preco": 0.5
+    },
+    {
+      "id": "2",
+      "servico": "Impressao",
+      "descricao": "impressao comum",
+      "preco": 2
+    },
+    {
+      "id": "3",
+      "servico": "curriculo",
+      "descricao": "curriculo",
+      "preco": 5
     }
-  }
+  ],
+  "usuario": [
+    {
+      "id": "1",
+      "nome": "Eduardo",
+      "email": "linuxmaniaco@gmail.com",
+      "telefone": "21994519731",
+      "endereco": "Rua Um",
+      "login": "linuxmaniaco",
+      "senha": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "nome": "Gleiciley",
+      "email": "fulanodetal@gmail.com",
+      "telefone": "21994519731",
+      "endereco": "Rua Um",
+      "login": "linuxmaniaco",
+      "senha": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "3",
+      "nome": "Erika",
+      "email": "sicranodetal@gmail.com",
+      "telefone": "21994519731",
+      "endereco": "Rua Um",
+      "login": "linuxmaniaco",
+      "senha": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "4",
+      "nome": "Luiza",
+      "email": "beltranodetal@gmail.com",
+      "telefone": "21994519731",
+      "endereco": "Rua Um",
+      "login": "linuxmaniaco",
+      "senha": "123456",
+      "role": "admin"
+    }
+  ],
+  "produto": [
+    {
+      "id": "1",
+      "nome": "Envelope branco",
+      "descricao": "Envelope A4 branco",
+      "preco": 1.5,
+      "estoque": 50
+    },
+    {
+      "id": "2",
+      "nome": "papel foto",
+      "descricao": "Papel foto gloss",
+      "preco": 5,
+      "estoque": 30
+    },
+    {
+      "id": "3",
+      "nome": "Pepel certificado",
+      "descricao": "papel de certificado",
+      "preco": 5,
+      "estoque": 30
+    },
+    {
+      "id": "4",
+      "nome": "Envelope branco",
+      "descricao": "Envelope a4 branco",
+      "preco": 1,
+      "estoque": 50
+    },
+    {
+      "id": "5",
+      "nome": "Envelope branco",
+      "descricao": "Envelope a4 branco",
+      "preco": 1,
+      "estoque": 50
+    }
+  ]
+}

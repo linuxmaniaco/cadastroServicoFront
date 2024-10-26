@@ -1,70 +1,34 @@
+import { useEffect, useState } from 'react'
+import lista from "../mock/db.json"
+import Produtos from "./Produtos";
+
+const colunas = ["id", "nome", "descricao", "preco", "estoque"];
 function Container (){
 
+    // useEffect(() => {
+    //     console.log('userEffect Funcinando... ')
+    
+    //     async function getProdutos() {
+    //         console.log('chamando produtos')
+    //         const dataPrimary = await fetch('http://0.0.0.0:3000/produto')
+    //         const lista = await dataPrimary.json()
+    //         console.log(lista)
+    //     }    
+    //     getProdutos()
+    //   })
+
+    console.log(lista.usuario)
+    
     return (
         <div className='container'>
-            {/* {children} */}
-            {/* Teste de corpo de container */}
             
             <div className='main'>
-                {/* <div className='titlePage'>Sistema</div> */}
-                <div className='Description'>Tabela de serviços</div>
-                <div className="servicos" role="region" tabIndex="0">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>
-                                    <div>
-                                        <div>Coluna 1</div>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div>
-                                        <div>Coluna 2</div>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div>
-                                        <div>Coluna 3</div>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div>
-                                        <div>Coluna 4</div>
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <Produtos produtos={lista.produto} colunas={colunas} />
             </div>
+            
         </div>
     )
+    // console.log(produtos) 
 }
 
 export default Container;
