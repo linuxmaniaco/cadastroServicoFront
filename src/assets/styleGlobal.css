@@ -22,6 +22,10 @@ header fieldset {
   margin: 10px;
 }
 
+header fieldset {
+  border-radius: 15px;
+}
+
 .menu {
   background-color: #4f4f4f;
   font-weight: 1000;
@@ -83,7 +87,30 @@ body {
   background-color: #ddcab8;
   color: #000000;
   padding: 5px;
+  text-align: center;
 }
+
+
+
+.btn {
+  border: none;
+  padding: 4px;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.btn-editar {
+  background-color: #f5d522;
+  cursor: pointer;
+}
+
+.btn-excluir {
+  background-color: #dc3545;
+  cursor: pointer;
+}
+
 
 footer {
     background-color: #4f4f4f;

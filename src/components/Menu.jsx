@@ -7,6 +7,7 @@ function Menu (){
               <li><a href='#'>PEDIDOS</a></li>
               <li><a href='#'>RELATÓRIOS</a></li>
               <li><a href='#'>ADMIN</a></li>
+              <li><a href='#'>SAIR</a></li>
           </ul>
         </div> 
     )
