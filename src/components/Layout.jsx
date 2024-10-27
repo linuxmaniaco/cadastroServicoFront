@@ -5,13 +5,13 @@ import Footer from '../components/Footer';
 import Menu from '../components/Menu';
 import Container from "./Container";
 
-function Layout(deleteFn){
+function Layout(){
 
     return (
         <>
             <Header></Header>
             <Menu></Menu>
-            <Container deleteFn={deleteFn}></Container>
+            <Container></Container>
             <Footer></Footer>
         </>
     )

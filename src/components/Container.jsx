@@ -4,7 +4,7 @@ import Produtos from "./Produtos";
 import { getProdutoApi } from '../service/Api';
 
 // const colunas = ["id", "nome", "descricao", "preco", "estoque"];
-function Container (deleteFn){
+function Container (){
     const [listas, setProdutos] = useState([])
     
 
@@ -24,7 +24,7 @@ function Container (deleteFn){
         <div className='container'>
             
             <div className='main'>
-                <Produtos produtos={listas} deleteFn={deleteFn}/>
+                <Produtos produtos={listas}/>
                 {/* {console.log("Passando lista em produtos ",listas)} */}
             </div>
             

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { colunas } from "../config/colunas-produto";
-import { deleteProdutosApi } from "../service/Api";
+import DeleteContext from "../DeleteContext";
 
 function Produtos({produtos = []}){
+    const deleteFn = useContext(DeleteContext);
 
     return (
         <>
@@ -17,7 +18,6 @@ function Produtos({produtos = []}){
                             <th>Editar</th>
                             <th>Excluir</th>
                         </tr>
-                        {/* {console.log("Estou aqui",produtos)} */}
                     </thead>
                     <tbody>
                         {Array.isArray(produtos) && produtos.map((item, i) => 
@@ -30,8 +30,7 @@ function Produtos({produtos = []}){
                             <td>{item.estoque}</td>
                             <td><button href='#' className='btn btn-editar'>Editar</button></td>
                             {/* <td><button href='#' className='btn btn-excluir'>Excluir</button></td> */}
-                            <td><button onClick={() => deleteProduto(item.id)} className='btn btn-excluir'>Excluir</button></td>
-                            {console.log("Testando o i... ",produtos)}
+                            <td><button onClick={() => deleteFn(item.id)} className='btn btn-excluir'>Excluir</button></td>
                         </tr>
                         )}
                         

@@ -1,6 +1,7 @@
 // import { useEffect, useState } from 'react'
 import Layout from "./components/Layout";
-
+import { deleteProdutosApi } from "./service/Api";
+import DeleteContext from "./DeleteContext";
 
 function App() {
   
@@ -11,14 +12,14 @@ function App() {
     } catch {
         alert("Aconteceu um erro");
     }
-    
-};
+  };
 
   return (
   
       <>
-            
-        <Layout deleteFn={deleteProduto}></Layout>
+        <DeleteContext.Provider value={deleteProduto}>
+          <Layout></Layout>
+        </DeleteContext.Provider>    
         
       </>
       
