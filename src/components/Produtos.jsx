@@ -4,6 +4,7 @@ import DeleteContext from "../DeleteContext";
 
 function Produtos({produtos = []}){
     const deleteFn = useContext(DeleteContext);
+    {console.log("LISTA EM PRODUTOS ",produtos)}
 
     return (
         <>
