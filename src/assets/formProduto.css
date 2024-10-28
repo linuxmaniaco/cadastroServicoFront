@@ -1,0 +1,85 @@
+/* ProductForm.css */
+.form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    width: 350px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  /* Impede o redimensionamento horizontal do textarea */
+  .form-group textarea {
+    width: 100%;
+    resize: vertical; /* Permite redimensionar apenas para cima ou para baixo */
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-submit,
+  .btn-cancel {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-cancel {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #d0d0d0;
+  }

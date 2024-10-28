@@ -12,7 +12,7 @@ function Header (){
             <div className='Logo'> <img src={logoImage}></img> Tabela de cadastro de serviços</div>
 
             <fieldset>
-                <legend>Resumo diário Venda</legend>
+                <legend>Resumo de Venda</legend>
                 <div className='LogoText'>  </div>
             </fieldset>
         </header>

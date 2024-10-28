@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { colunas } from "../config/colunas-produto";
-import DeleteContext from "../DeleteContext";
+import GlobalContext from "../GlobalContext";
 
 function Produtos({produtos = []}){
-    const deleteFn = useContext(DeleteContext);
+    const deleteFn = useContext(GlobalContext);
     {console.log("LISTA EM PRODUTOS ",produtos)}
 
     return (

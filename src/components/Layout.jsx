@@ -5,11 +5,12 @@ import Footer from '../components/Footer';
 import Menu from '../components/Menu';
 import Container from "./Container";
 
+
 function Layout(listas){
 
     return (
         <>
-            <Header></Header>
+            <Header />
             <Menu></Menu>
             <Container listas={listas.listas}></Container>
             {console.log("Log do layout",listas.listas)}

@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react'
 import Layout from "./components/Layout";
 import { deleteProdutosApi } from "./service/Api";
-import DeleteContext from "./DeleteContext";
+import GlobalContext from "./GlobalContext";
 import { getProdutoApi } from './service/Api';
+import Form from './components/Form';
+import Topo from './components/Topo_act';
 
 function App() {
   const [listas, setProdutos] = useState([])
+  const [showList, setShowList] = useState(true); 
   
   // Deletar produtos
   const deleteProduto = async (id) => {
@@ -37,9 +40,11 @@ function App() {
   return (
   
       <>
-        <DeleteContext.Provider value={deleteProduto}>
-          <Layout listas={listas}></Layout>
-        </DeleteContext.Provider>    
+        <GlobalContext.Provider value={deleteProduto}>
+          <Topo showList={showList} />
+          {showList ? <Layout listas={listas}></Layout> : <Form />}
+          
+        </GlobalContext.Provider>    
         
       </>
       
